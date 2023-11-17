@@ -30,8 +30,9 @@ const World = () => (
     <ButtonSensor output="myButton1" />
     <ButtonSensor output="myButton2" scale={7} x={4.1} y={0.0} z={-252.9} />
     <VisibleOnSignal input="myButton2">
-      <Prefab id="ancient_urn_01" scale={2} x={3} y={0.0} z={-252.9} />
-      <VideoPanel src={'https://cdn.hibervr.com/video/Hiber3D.mp4'}  scale= {4}x={10.5} y={3.0} z={-259.5} rotY={180}></VideoPanel>
+      <Prefab id="ancient_urn_01" scale={2} x={10} y={0.0} z={-252.9} />
+      {/* <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'}  scale= {4}x={10.5} y={2.0} z={-259.5} rotY={180}></VideoPanel> */}
+      <VideoPanel src={'https://cdn.hibervr.com/video/Hiber3D.mp4'}  scale= {4}x={10} y={1.5} z={-259.5} rotY={180}></VideoPanel>
 
     </VisibleOnSignal>
   </HNode>
