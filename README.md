@@ -1,6 +1,5 @@
-# my-world
+# NITTroCineverse
 
-This is a Hiber3D Development Kit (HDK) project created using [create-hdk](https://www.npmjs.com/package/create-hdk)
 
 Please see [HDK Docs](https://developer.hiber3d.com/docs/) for full documentation.
 
