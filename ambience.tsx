@@ -162,6 +162,36 @@ const CustomAmbiance = () => (
         <Prefab id="potted_plant_01" scale={1} x={74.6} y={0.0} z={-271.1} rotX={0}  rotY={0} rotZ={0} />
         <Prefab id="potted_plant_02" scale={1} x={86.9} y={0.0} z={-271.3} rotX={0}  rotY={0} rotZ={0} />
 
+        {/* Plant left side */}
+        <Prefab id="potted_plant_01" scale={1} x={-90.9} y={0.0} z={-260.9} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="potted_plant_02" scale={1} x={-108.3} y={0.0} z={-260.9} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="potted_plant_01" scale={1} x={-121.0} y={0.0} z={-260.5} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="potted_plant_02" scale={1} x={-138.7} y={0.0} z={-260.0} rotX={0}  rotY={0} rotZ={0} />
+
+        </>
+
+        <>
+        {/* Film shooting */}
+        <Prefab id="plane_02" scale={1} x={100.4} y={-1.4} z={-220.9} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_primitive_wall_01" scaleX={7} scaleY={2} scaleZ={1} x={100.4} y={0} z={-219.4} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_primitive_wall_01" scaleX={7} scaleY={2} scaleZ={1} x={100.4} y={0} z={-219.4} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="en_m_log_cabin_01_floor" material = {'t_planks_01'} scaleX={3} scaleY={1} scaleZ={3} x={92.3} y={0.6} z={-227.4} rotX={0}  rotY={0} rotZ={0} />
+
+        <Prefab id="en_m_primitive_thin_wall_01" material = {'palette_01_white'} scaleX={3.4} scaleY={1} scaleZ={1} x={91.6} y={0.9} z={-231.4} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_primitive_thin_wall_01" material = {'palette_01_white'} scaleX={3.4} scaleY={1} scaleZ={1} x={91.6} y={4} z={-231.4} rotX={0}  rotY={0} rotZ={0} />
+        
+        <Prefab id="en_m_log_cabin_01_floor" material = {'t_wood_01'}scaleX={4} scaleY={1} scaleZ={3} x={92.3} y={8} z={-227.4} rotX={0}  rotY={0} rotZ={0} />
+
+        <Prefab id="en_m_primitive_thin_wall_01" material = {'palette_01_white'} scaleX={3.4} scaleY={1} scaleZ={1} x={91.6} y={0.9} z={-219.7} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_primitive_thin_wall_01" material = {'palette_01_white'} scaleX={3.4} scaleY={1} scaleZ={1} x={91.6} y={4} z={-219.7} rotX={0}  rotY={0} rotZ={0} />
+
+        <Prefab id="en_m_primitive_thin_wall_01" material = {'palette_01_white'} scaleX={3} scaleY={2} scaleZ={1} x={100.1} y={0} z={-227.6} rotX={0}  rotY={90} rotZ={0} />
+        
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-227.4} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-228.9} rotX={0}  rotY={-90} rotZ={0} />
+
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-230.4} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-230.9} rotX={0}  rotY={-90} rotZ={0} />
         </>
 
         {/* <Prefab id="gpl_tilting_ramp_01" scale={1} x={1.6} y={0.0} z={-249.1} />

@@ -40,7 +40,7 @@ const CinemaVerse = () => (
     <ButtonSensor output="myButton1" />
     <ButtonSensor output="myButton2" scale={7} x={4.1} y={0.0} z={-252.9} />
     <Prefab id="gpl_teleporter_sender_02" x={31.1} y={0.0} z={249.3} />
-    <Prefab id="gpl_teleporter_sender_01" scale={2.6} x={18.0} y={13} z={-285.6} rotX={90} />
+    <Prefab id="gpl_teleporter_sender_01" scale={2.6} x={0.0} y={13} z={-285.6} rotX={90} />
     <Prefab id="gpl_teleporter_receiver_01" x={22.5} y={0.0} z={245.0} />
     <Prefab id="gpl_teleporter_receiver_02" x={38} y={0.0} z={-246.1} />
     {/* <MediaDisplay scaleY={2} scaleX={4} scaleZ={2} x={28.2} y={16.8} z={-270.2} {...mediaInfo} /> */}
