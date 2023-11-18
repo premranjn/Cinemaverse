@@ -1,22 +1,30 @@
-import { HNode, render } from "@hiber3d/hdk-react";
-import { Grid, Ground, SkyScraper } from "@hiber3d/hdk-react-components";
-import { Prefab } from "@hiber3d/hdk-react";
 import { Avatar } from "@hiber3d/hdk-react-components";
-import { Animation } from "@hiber3d/hdk-react";
-import { MaterialOnSignal } from "@hiber3d/hdk-react";
-import { ButtonSensor } from "@hiber3d/hdk-react";
-import { VideoPanel } from "@hiber3d/hdk-react-components";
-import { VisibleOnSignal } from "@hiber3d/hdk-react";
-import { AndGate } from "@hiber3d/hdk-react";
-import { getAvatarPosition } from '@hiber3d/hdk-core';
-import { getCameraPosition } from "@hiber3d/hdk-core/dist/types/src/HDK";
-import { InteractiveMediaAsset } from "@hiber3d/hdk-react-components";
-import { MediaDisplay } from "@hiber3d/hdk-react-components";
-import React from 'react';
+import { Animation, Prefab } from "@hiber3d/hdk-react";
 
 const CustomAvatar = () => (
     <>
-        <Avatar animation = 'an_default_walk' scale={2.6} x={10} y={0.0} z={-256.8} />
+        {/* blue red tshirt */}
+        <Animation animation={{ x:[110,110,110,170,170,170,170,110], y:[0,0,0,0,0,0,0,0], z:[-170,170,170,170,170,-170,-170,-170], rotY:[0,0,90,90,180,180,270,270], duration:530, steps:[0,0.43,0.43,0.5,0.5,0.93,0.93,1], loop:'RESTART', easing:'LINEAR' }}>
+            <Avatar animation = 'an_default_walk' scale={1} />
+        </Animation>
+        <Animation animation={{ x:[112,112,112,172,172,172,172,112], y:[0,0,0,0,0,0,0,0], z:[-172,168,168,168,168,-172,-172,-172], rotY:[0,0,90,90,180,180,270,270], duration:530, steps:[0,0.43,0.43,0.5,0.5,0.93,0.93,1], loop:'RESTART', easing:'LINEAR' }}>
+            <Avatar animation = 'an_default_walk' scale={1} />
+        </Animation>
+        <Animation animation={{ x:[-105,-105,-105,-105,-170,-170,-170,-105], y:[0,0,0,0,0,0,0,0], z:[-170,170,170,170,170,-170,-170,-170], rotY:[0,0,90,90,180,180,270,270], duration:530, steps:[0,0.43,0.43,0.5,0.5,0.93,0.93,1], loop:'RESTART', easing:'LINEAR' }}>
+            <Avatar animation = 'an_default_walk' scale={1} />
+        </Animation>
+        <Animation animation={{ x:[-107,-107,-107,-107,-168,-168,-168,-107], y:[0,0,0,0,0,0,0,0], z:[-172,168,168,168,168,-172,-172,-172], rotY:[0,0,90,90,180,180,270,270], duration:530, steps:[0,0.43,0.43,0.5,0.5,0.93,0.93,1], loop:'RESTART', easing:'LINEAR' }}>
+            <Avatar animation = 'an_default_walk' scale={1} />
+        </Animation>
+        <Animation animation={{ x:[-170,170,170,170,170,-170,-170,-170], y:[0,0,0,0,0,0,0,0], z:[-105,-105,-105,-105,-40,-40,-40,-105], rotY:[90,90,180,180,270,270,0,0], duration:530, steps:[0,0.43,0.43,0.5,0.5,0.93,0.93,1], loop:'RESTART', easing:'LINEAR' }}>
+            <Avatar animation = 'an_default_walk' scale={1} />
+        </Animation>
+        <Avatar animation={'an_default_emote_breakdance_ready_01'} scale={1} x={57} y={0} z={-170} rotY={225} />
+        <Avatar animation={'an_default_emote_breakdance_ready_01'} scale={1} x={56} y={0} z={-170} rotY={135} />
+        <Avatar animation={'an_default_emote_talking_01'} scale={1} x={28} y={0} z={-114} rotY={285} />
+        <Avatar animation={'an_default_emote_talking_01'} scale={1} x={26} y={0} z={-114} rotY={45} />
+        <Avatar animation={'an_default_emote_talking_01'} scale={1} x={27} y={0} z={-112} rotY={150} />
+        <Prefab id='radio_01' x={57} y={0} z={-168} rotY={200}/>
     </>
 );
 
