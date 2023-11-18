@@ -15,6 +15,7 @@ import { MediaDisplay } from "@hiber3d/hdk-react-components";
 import { FibonacciSphere } from "@hiber3d/hdk-react-components";
 import { InCircle } from "@hiber3d/hdk-react-components";
 import { ImagePanel } from "@hiber3d/hdk-react-components";
+import { SegmentedStack } from "@hiber3d/hdk-react-components";
 import React from 'react';
 
 // const mediaInfo = {
@@ -31,6 +32,7 @@ const CustomAmbiance = () => (
         <>
             {/* cinema screen: !!Dont change the below line */}
             <Prefab id="plane_01" scale={0.2} x={0} y={5} z={-225} rotX={90} rotY={180} rotZ={0} />
+            {/* <Prefab id="invisible_light_cyan" scale={0.2} x={0} y={5} z={-225} rotX={90} rotY={180} rotZ={0} /> */}
             {/* <Prefab id="hiberpunk_decoration_disc_t1" scale={28} x={0} y={-14} z={-224.2} rotX={0} rotY={0} rotZ={0} /> */}
             
             
@@ -82,30 +84,28 @@ const CustomAmbiance = () => (
         </>
 
         <>
-        {/* <shoops > */}
-        <Prefab id="en_m_hiberpunk_store_01" scale={1} x={-55.8} y={0.0} z={-276.8}   rotX={0}  rotY={0} rotZ={0} />
-        {/* <Prefab id="en_m_hiberpunk_building_02_bottom" scale={1} x={-45.3} y={0} z={-200.6}   rotX={0}  rotY={100} rotZ={0} /> */}
+        {/* <shoops > */ }
+        {/* <Prefab id="en_m_hiberpunk_store_01" scale={1} x={-55.8} y={0.0} z={-276.8}   rotX={0}  rotY={0} rotZ={0} />
         <Prefab id="en_m_hiberpunk_store_02" scale={1} x={-44.4} y={0} z={-277.8}   rotX={0}  rotY={0} rotZ={0} />
         <Prefab id="neon_sign_06" scaleX={1.2} scaleY={1} scaleZ={1} x={-47.7} y={7.4} z={-271.3}   rotX={0}  rotY={0} rotZ={0} />
         <Prefab id="neon_sign_01" scaleX={1} scaleY={1} scaleZ={1} x={-44.2} y={4.1} z={-273.6}   rotX={0}  rotY={90} rotZ={0} />
 
         <Prefab id="en_m_hiberpunk_store_01" scale={1} x={-30.8} y={0.0} z={-277.8}   rotX={0}  rotY={0} rotZ={0} />
 
-        <Prefab id="hiberpunk_blocks_f1_01" scale={5} x={-17.8} y={0} z={-277.0}   rotX={0}  rotY={0} rotZ={0} /> 
-        <Prefab id="en_m_tunnel_bridge_02" scale={1} x={-17.8} y={9} z={-277.0}   rotX={0}  rotY={90} rotZ={0} /> 
-        <Prefab id="en_m_tunnel_bridge_03" scale={1} x={-20} y={9} z={-277.2}   rotX={0}  rotY={90} rotZ={0} /> 
+        <Prefab id="hiberpunk_blocks_f1_01" scale={5} x={-17.8} y={0} z={-277.0}   rotX={0}  rotY={45} rotZ={0} /> 
+        <Prefab id="en_m_tunnel_bridge_02" scale={1} x={-17.8} y={9} z={-277.0}   rotX={0}  rotY={45} rotZ={0} /> 
+        <Prefab id="en_m_tunnel_bridge_03" scale={1} x={-20} y={9} z={-277.2}   rotX={0}  rotY={45} rotZ={0} /> 
 
-        <Prefab id="hiberpunk_blocks_f1_01" scale={5} x={-6} y={0} z={-277.0}   rotX={0}  rotY={0} rotZ={0} /> 
-        <Prefab id="en_m_tunnel_bridge_02" scale={1} x={-6} y={9} z={-277.0}   rotX={0}  rotY={90} rotZ={0} /> 
+        <Prefab id="hiberpunk_blocks_f1_01" scale={5} x={-6} y={0} z={-277.0}   rotX={0}  rotY={45} rotZ={0} /> 
+        <Prefab id="en_m_tunnel_bridge_02" scale={1} x={-6} y={9} z={-277.0}   rotX={0}  rotY={45} rotZ={0} /> 
 
-        <Prefab id="hiberpunk_blocks_f1_01" scale={5} x={6} y={0} z={-277.0}   rotX={0}  rotY={0} rotZ={0} /> 
-        <Prefab id="en_m_tunnel_bridge_02" scale={1} x={6} y={9} z={-277.0}   rotX={0}  rotY={90} rotZ={0} /> 
+        <Prefab id="hiberpunk_blocks_f1_01" scale={5} x={6} y={0} z={-277.0}   rotX={0}  rotY={45} rotZ={0} /> 
+        <Prefab id="en_m_tunnel_bridge_02" scale={1} x={6} y={9} z={-277.0}   rotX={0}  rotY={45} rotZ={0} /> 
 
-        <Prefab id="hiberpunk_blocks_f1_01" scale={5} x={18} y={0} z={-277.0}   rotX={0}  rotY={0} rotZ={0} /> 
-        <Prefab id="en_m_tunnel_bridge_02" scale={1} x={18} y={9} z={-277.0}   rotX={0}  rotY={90} rotZ={0} /> 
+        <Prefab id="hiberpunk_blocks_f1_01" scale={5} x={18} y={0} z={-277.0}   rotX={0}  rotY={45} rotZ={0} /> 
+        <Prefab id="en_m_tunnel_bridge_02" scale={1} x={18} y={9} z={-277.0}   rotX={0}  rotY={45} rotZ={0} /> 
 
-        <Prefab id="hiberpunk_blocks_d1" scale={5} x={29.2} y={0} z={-276.7}   rotX={0}  rotY={90} rotZ={0} />      
-        {/* <Prefab id="en_m_tunnel_bridge_03" scale={1} x={38.4} y={9} z={-276.8}   rotX={0}  rotY={90} rotZ={0} />      */}
+        <Prefab id="hiberpunk_blocks_d1" scale={5} x={29.2} y={0} z={-276.7}   rotX={0}  rotY={45} rotZ={0} />      
         
          <Prefab id="couch_01" scale={2} x={-6.7} y={9.8} z={-274.5}   rotX={0}  rotY={0} rotZ={0} />        
          <Prefab id="store_table_display_02" scale={1} x={-3.4} y={10.0} z={-274.1}   rotX={0}  rotY={0} rotZ={0} />   
@@ -113,11 +113,38 @@ const CustomAmbiance = () => (
          <Prefab id="couch_01" scale={2} x={5.7} y={9.8} z={-274.5}   rotX={0}  rotY={0} rotZ={0} />        
          <Prefab id="store_table_display_02" scale={1} x={9.4} y={10.0} z={-274.1}   rotX={0}  rotY={0} rotZ={0} /> 
          
-         <Prefab id="display_shelf_01" scale={1} x={-10.8} y={0.0} z={-262.2}   rotX={0}  rotY={0} rotZ={0} /> 
-        {/* <ImagePanel src="https://neonsign.com/wp-content/uploads/2020/05/14444-Cold-Drinks-With-Circle-Border-Neon-Signs_17x30-Contoured-Black-Backing.jpg" ratio={1000 / 750} x={-32.6} y={3.4} z={-272.6} /> */}
-        {/* <MediaDisplay scale={1} x={14} y={0.3} z={-256.8} {...mediaInfo} /> */}
+         <Prefab id="display_shelf_01" scale={1} x={-10.8} y={0.0} z={-262.2}   rotX={0}  rotY={0} rotZ={0} />  */}
 
+        <Prefab id="flying_car_01" scale={1} x={37.9} y={18.0} z={-188.2}   rotX={0}  rotY={0} rotZ={0} /> 
 
+        <SegmentedStack
+            segments={[
+                {
+                length: 4,
+                direction: 'RIGHT',
+                dimensions: [12,2,2],
+                },
+            ]}
+            x={36.2} y={4} z={-268.6} rotX={0} rotY={-55} rotZ={0}
+            renderItem={() => <Prefab id="en_m_tunnel_bridge_02" />}
+        />
+
+        <SegmentedStack
+            segments={[
+                {
+                length: 4,
+                direction: 'RIGHT',
+                dimensions: [12,2,2],
+                },
+            ]}
+            x={-56} y={4} z={-236} rotX={0} rotY={55} rotZ={0}
+            renderItem={() => <Prefab id="en_m_tunnel_bridge_02" />}
+        />
+
+        {/* <Prefab id="hiberpunk_blocks_f1_01" scaleX={4} scaleY={1} scaleZ={1} x={-61.1} y={1} z={-229.0}   rotX={0}  rotY={-35} rotZ={0} />
+        <Prefab id="hiberpunk_blocks_f1_01" scaleX={4} scaleY={1} scaleZ={1} x={-63.5} y={0.0} z={-226.3}   rotX={0}  rotY={-35} rotZ={0} /> */}
+
+        <Prefab id="gpl_air_lift_01" scale={2} x={-60.8} y={1.0} z={-228.6}/>
         </>
 
         {/* <Prefab id="gpl_tilting_ramp_01" scale={1} x={1.6} y={0.0} z={-249.1} />

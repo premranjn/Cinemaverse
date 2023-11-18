@@ -1,5 +1,5 @@
 import { HNode, render } from "@hiber3d/hdk-react";
-import { Grid, Ground, SkyScraper } from "@hiber3d/hdk-react-components";
+import { Grid, Ground, SkyScraper, Spawnpoint } from "@hiber3d/hdk-react-components";
 import { Prefab } from "@hiber3d/hdk-react";
 import { Avatar } from "@hiber3d/hdk-react-components";
 import { Animation } from "@hiber3d/hdk-react";
@@ -22,7 +22,8 @@ import CinemaVerse from "./cinemaVerse";
 const World = () => (
   <HNode >
     <Ground />
-    <Grid itemSpacing={65} renderItem={<SkyScraper />} />
+    <Grid itemSpacing={70} renderItem={<SkyScraper />} />
+    <Spawnpoint x={-46.9} y={0.0} z={-204.6} />
     <CinemaVerse/>  
     <CustomAvatar />
     <CustomAmbiance />
