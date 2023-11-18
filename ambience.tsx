@@ -1,5 +1,5 @@
 import { HNode, render } from "@hiber3d/hdk-react";
-import { Grid, Ground, SkyScraper } from "@hiber3d/hdk-react-components";
+import { DJBooth, Grid, Ground, SkyScraper } from "@hiber3d/hdk-react-components";
 import { Prefab } from "@hiber3d/hdk-react";
 import { Avatar } from "@hiber3d/hdk-react-components";
 import { Animation } from "@hiber3d/hdk-react";
@@ -18,6 +18,9 @@ const CustomAmbiance = () => (
     <>
     <Prefab id="gpl_tilting_ramp_01" scale={1} x={1.6} y={0.0} z={-249.1} />
     <Prefab id="gpl_tilting_ramp_01" scale={1} x={-5} y={0.0} z={-249.1} />
+    <DJBooth>
+        
+    </DJBooth>
     </>
         
 );

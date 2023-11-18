@@ -30,4 +30,4 @@ const World = () => (
   </HNode>
 );
 
-render(<World />, { environment: "starry_night_01" } );
+render(<World />, { environment: "city_night_01" } );
