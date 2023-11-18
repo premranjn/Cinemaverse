@@ -45,7 +45,7 @@ const CinemaVerse = () => (
     <Prefab id="gpl_teleporter_receiver_02" x={38} y={0.0} z={-246.1} />
     {/* <MediaDisplay scaleY={2} scaleX={4} scaleZ={2} x={28.2} y={16.8} z={-270.2} {...mediaInfo} /> */}
    
-    <Prefab id="hovering_sign_04" x={10} y={5.0} z={-263}/>
+    {/* <Prefab id="hovering_sign_04" x={10} y={5.0} z={-263}/>
     <InteractiveMediaAsset
       header="jksfjdsn"
       // text="Your Custom Text Here" 
@@ -55,7 +55,7 @@ const CinemaVerse = () => (
       asset={<Prefab id="hovering_sign_04" />}
       // scale={20}
       x={25} y={5.0} z={-263}
-    />
+    /> */}
 
     <VisibleOnSignal input="myButton2">
       <Prefab id="ancient_urn_01" scale={2} x={10} y={0.0} z={-252.9} />
