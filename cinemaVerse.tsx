@@ -38,12 +38,12 @@ const CinemaVerse = () => (
     <ButtonSensor output="myButton1" />
     <ButtonSensor output="myButton2" scale={7} x={4.1} y={0.0} z={-252.9} />
     <Prefab id="gpl_teleporter_sender_02" x={31.1} y={0.0} z={249.3} />
-    <Prefab id="gpl_teleporter_sender_01" scale={2.6} x={20} y={2.0} z={-256.8} rotX={90} />
+    <Prefab id="gpl_teleporter_sender_01" scale={2.6} x={18.0} y={13} z={-285.6} rotX={90} />
     <Prefab id="gpl_teleporter_receiver_01" x={22.5} y={0.0} z={245.0} />
     <Prefab id="gpl_teleporter_receiver_02" x={38} y={0.0} z={-246.1} />
-    <MediaDisplay scale={1} x={14} y={0.3} z={-256.8} {...mediaInfo} />
+    {/* <MediaDisplay scaleY={2} scaleX={4} scaleZ={2} x={28.2} y={16.8} z={-270.2} {...mediaInfo} /> */}
    
-    <Prefab id="hovering_sign_04" x={20} y={5.0} z={-256.8}/>
+    <Prefab id="hovering_sign_04" x={10} y={5.0} z={-263}/>
     <InteractiveMediaAsset
       header="jksfjdsn"
       // text="Your Custom Text Here" 
@@ -51,14 +51,14 @@ const CinemaVerse = () => (
       body="skjdnfkjdsn"
       url="https://hiber3d.com/"
       asset={<Prefab id="hovering_sign_04" />}
-      scale={0.5}
-      x={25.0} y={0.0} z={-252.5}
+      // scale={20}
+      x={25} y={5.0} z={-263}
     />
 
     <VisibleOnSignal input="myButton2">
       <Prefab id="ancient_urn_01" scale={2} x={10} y={0.0} z={-252.9} />
       {/* <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'}  scale= {4}x={10.5} y={2.0} z={-259.5} rotY={180}></VideoPanel> */}
-      <VideoPanel src={'https://cdn.hibervr.com/video/Hiber3D.mp4'} scale={4} x={10} y={1.5} z={-259.5} rotY={180}></VideoPanel>
+      <VideoPanel src={'https://cdn.hibervr.com/video/Hiber3D.mp4'} scale={10} x={10} y={1.5} z={-259.5} rotY={180}></VideoPanel>
 
     </VisibleOnSignal>
     </>
