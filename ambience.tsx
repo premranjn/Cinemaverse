@@ -12,4 +12,14 @@ import { getAvatarPosition } from '@hiber3d/hdk-core';
 import { getCameraPosition } from "@hiber3d/hdk-core/dist/types/src/HDK";
 import { InteractiveMediaAsset } from "@hiber3d/hdk-react-components";
 import { MediaDisplay } from "@hiber3d/hdk-react-components";
+import React from 'react';
 
+const CustomAmbiance = () => (
+    <>
+    <Prefab id="gpl_tilting_ramp_01" scale={1} x={1.6} y={0.0} z={-249.1} />
+    <Prefab id="gpl_tilting_ramp_01" scale={1} x={-5} y={0.0} z={-249.1} />
+    </>
+        
+);
+
+export default CustomAmbiance;
