@@ -2,3 +2,4 @@
 .env
 scene.json
 .fuse*
+.vscode
