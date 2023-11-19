@@ -1,5 +1,5 @@
 import { HNode, render } from "@hiber3d/hdk-react";
-import { Grid, Ground, SkyScraper } from "@hiber3d/hdk-react-components";
+import { For, Grid, Ground, SkyScraper } from "@hiber3d/hdk-react-components";
 import { Prefab } from "@hiber3d/hdk-react";
 import { Avatar } from "@hiber3d/hdk-react-components";
 import { Animation } from "@hiber3d/hdk-react";
@@ -12,7 +12,7 @@ import { getAvatarPosition } from '@hiber3d/hdk-core';
 import { getCameraPosition } from "@hiber3d/hdk-core/dist/types/src/HDK";
 import { InteractiveMediaAsset } from "@hiber3d/hdk-react-components";
 import { MediaDisplay } from "@hiber3d/hdk-react-components";
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 const mediaInfo = {
@@ -23,15 +23,17 @@ const mediaInfo = {
     link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
   };
 
+
+  
 const CinemaVerse = () => (
     <>
     <Prefab
       id="sofa_01_t2" rotY={180} scale={1} x={1.6} y={0.0} z={-249.1}>
 
-
-      <Avatar animation="an_default_emote_sitting_idle_02" x={2} y={0.16} z={0.12} rotY={20} />
+      {/* <Avatar animation='an_default_walk' x={2} y={0.16} z={0.12} rotY={20} /> */}
       <Avatar animation="an_default_emote_hip_hop_dancing_01" x={-2} y={0.16} z={0.3} rotY={20} />
       <Avatar animation="an_default_emote_sitting_idle_02" y={0.16} z={0.12} rotY={20} />
+      <Avatar animation="moving_platform_rotating" x={6.9} y={0.0} z={-240.3} />
 
     </Prefab>
     {/* <Prefab id="gpl_button_01" rotY={180} scale={7} x={4.1} y={0.0} z={-252.9}></Prefab> */}

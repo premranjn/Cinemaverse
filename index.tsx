@@ -16,6 +16,7 @@ import { MediaDisplay } from "@hiber3d/hdk-react-components";
 import CustomAvatar from "./animation";
 import CustomAmbiance from "./ambience";
 import CinemaVerse from "./cinemaVerse";
+import AmbianceLeft from "./ambienceLeft";
 
 
 
@@ -27,6 +28,7 @@ const World = () => (
     <CinemaVerse/>  
     <CustomAvatar />
     <CustomAmbiance />
+    <AmbianceLeft/>
 
   </HNode>
 );
