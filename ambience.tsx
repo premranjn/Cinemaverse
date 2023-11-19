@@ -187,11 +187,51 @@ const CustomAmbiance = () => (
 
         <Prefab id="en_m_primitive_thin_wall_01" material = {'palette_01_white'} scaleX={3} scaleY={2} scaleZ={1} x={100.1} y={0} z={-227.6} rotX={0}  rotY={90} rotZ={0} />
         
-        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-227.4} rotX={0}  rotY={-90} rotZ={0} />
-        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-228.9} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-226.8} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-228.3} rotX={0}  rotY={-90} rotZ={0} />
 
-        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-230.4} rotX={0}  rotY={-90} rotZ={0} />
-        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={3} z={-230.9} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={4} z={-230.4} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={4} z={-231.9} rotX={0}  rotY={-90} rotZ={0} />
+
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={4} z={-223.4} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="wall_shelf_01"  scaleX={1} scaleY={1} scaleZ={1} x={98.2} y={4} z={-224.9} rotX={0}  rotY={-90} rotZ={0} />
+
+        <Prefab id="potted_plant_03"  scale={0.7} x={97.9} y={4.1} z={-223.3} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="ancient_urns_01"  scale={0.5} x={97.9} y={4.1} z={-224.7} rotX={0}  rotY={-90} rotZ={0} />
+
+        <Prefab id="books_01"  scale={1} x={97.6} y={3.1} z={-228.1} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="books_02"  scale={1} x={97.6} y={3.1} z={-227.1} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="books_01"  scale={1} x={97.6} y={3.1} z={-226.7} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="books_02"  scale={1} x={97.6} y={3.1} z={-227.5} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="books_02"  scale={1} x={97.6} y={3.1} z={-228.6} rotX={0}  rotY={-90} rotZ={0} />
+
+        <Prefab id="vase_large_leaf_plant_01"  scale={0.5} x={97.8} y={4.1} z={-230.3} rotX={0}  rotY={-90} rotZ={0} />
+        <Prefab id="en_p_jaguar_head_01_t1"  scale={0.3} x={97.8} y={4.1} z={-231.8}  rotY={-90} rotZ={0} />
+
+        <Prefab id="carpet_01"  scale={1.5} x={92.7} y={0.9} z={-227.4}  rotY={0} rotZ={0} />
+
+        <Prefab id="coffee_table_02"  scale={1} x={92.7} y={1.0} z={-227.2}  rotY={0} rotZ={0} />
+        <Prefab id="lounge_chair_02"  scale={1} x={92.8} y={1.0} z={-225.1}  rotY={180} rotZ={0} />
+        <Prefab id="lounge_chair_02"  scale={1} x={92.8} y={1.0} z={-229.1}  rotY={0} rotZ={0} />
+        <Prefab id="sofa_01_t1"  scale={1.2} x={93.0} y={0.9} z={-232.2} rotY={0} rotZ={0} />
+        
+
+        <Prefab id="en_p_bookshelf"  scale={1.2} x={93.7} y={0.9} z={-222.1} rotY={180} rotZ={0} />
+
+        <Prefab id="books_02"  scale={1} x={93.7} y={3.7} z={-222.6} rotX={0}  rotY={180} rotZ={0} />
+        <Prefab id="books_01"  scale={1} x={93.6} y={2.8} z={-222.6} rotX={0}  rotY={180} rotZ={0} />
+        <Prefab id="books_02"  scale={1} x={93.9} y={2.8} z={-222.6} rotX={0}  rotY={180} rotZ={0} />
+
+        <Prefab id="books_02"  scale={1} x={93.6} y={1.9} z={-222.6} rotX={0}  rotY={180} rotZ={0} />
+        <Prefab id="books_02"  scale={1} x={93.9} y={1.9} z={-222.6} rotX={0}  rotY={180} rotZ={0} />
+
+        <Prefab id="searchlight_01"  scale={1} x={85.4} y={0.6} z={-223.9} rotX={0}  rotY={-75} rotZ={0} />      
+        <Prefab id="food_cup_01"  scale={0.8} x={92.5} y={1.6} z={-227.2} rotX={0}  rotY={0} rotZ={0} />  
+
+        <Prefab id="chair_01"  scale={1}  x={85.0} y={0.6} z={-227.8}  rotY={90} rotZ={0} />  
+        <Prefab id="headphones_03"  scale={1}  x={84.7} y={1.9} z={-227.8}  rotY={0} rotZ={0} /> 
+        <Prefab id="waffle_cone_01" material = {'palette_01_white'} scale={0.1}  x={85.2} y={1.3} z={-227.8}  rotX={-26}rotY={90} rotZ={90} />  
+        
         </>
 
         {/* <Prefab id="gpl_tilting_ramp_01" scale={1} x={1.6} y={0.0} z={-249.1} />
