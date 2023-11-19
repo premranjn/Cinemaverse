@@ -15,7 +15,7 @@ const CustomAmbiance = () => (
         {/* Screen & Seats */}
         <>
             {/* cinema screen: !!Dont change the below line */}
-            <Prefab id="plane_01" scale={0.4} x={0} y={5} z={-225} rotX={90} rotY={180} rotZ={0} />
+            {/* <Prefab id="plane_01" scale={0.4} x={0} y={5} z={-225} rotX={90} rotY={180} rotZ={0} /> */}
             {/* <Prefab id="invisible_light_cyan" scale={0.2} x={0} y={5} z={-225} rotX={90} rotY={180} rotZ={0} /> */}
             {/* <Prefab id="hiberpunk_decoration_disc_t1" scale={28} x={0} y={-14} z={-224.2} rotX={0} rotY={0} rotZ={0} /> */}
             
@@ -174,7 +174,7 @@ const CustomAmbiance = () => (
         {/* Film shooting */}
         <Prefab id="plane_02" scale={1} x={100.4} y={-1.4} z={-220.9} rotX={0}  rotY={0} rotZ={0} />
         <Prefab id="en_m_primitive_wall_01" scaleX={7} scaleY={2} scaleZ={1} x={100.4} y={0} z={-219.4} rotX={0}  rotY={0} rotZ={0} />
-        <Prefab id="en_m_primitive_wall_01" scaleX={7} scaleY={2} scaleZ={1} x={100.4} y={0} z={-219.4} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="en_m_primitive_wall_01" scaleX={3} scaleY={2} scaleZ={1} x={100.4} y={0} z={-227.4} rotX={0}  rotY={90} rotZ={0} />
         <Prefab id="en_m_log_cabin_01_floor" material = {'t_planks_01'} scaleX={3} scaleY={1} scaleZ={3} x={92.3} y={0.6} z={-227.4} rotX={0}  rotY={0} rotZ={0} />
 
         <Prefab id="en_m_primitive_thin_wall_01" material = {'palette_01_white'} scaleX={3.4} scaleY={1} scaleZ={1} x={91.6} y={0.9} z={-231.4} rotX={0}  rotY={0} rotZ={0} />
@@ -233,7 +233,53 @@ const CustomAmbiance = () => (
         <Prefab id="waffle_cone_01" material = {'palette_01_white'} scale={0.1}  x={85.2} y={1.3} z={-227.8}  rotX={-26}rotY={90} rotZ={90} />  
         
         </>
-
+        <>
+        {/* Scene 2 */}
+        <Prefab id="en_m_primitive_wall_01" scaleX={4} scaleY={2} scaleZ={1} x={87.4} y={0} z={-213} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="en_m_primitive_thin_wall_01" material = {'t_grass_03'} scaleX={4} scaleY={2} scaleZ={1} x={88.4} y={0} z={-213} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="en_m_primitive_thin_wall_01" material = {'t_grass_03'} scaleX={7} scaleY={2} scaleZ={1} x={100.6} y={0} z={-218.4} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="plane_03" material = {'t_jungle_ground_01'} scaleX={1.8} scaleY={0.2} scaleZ={1} x={100.4} y={0.3} z={-212.5} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_jungle_temple_01_door" scaleX={1} scaleY={1} scaleZ={1} x={99.8} y={0.7} z={-210.9} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_jungle_temple_pillar_01" scaleX={0.4} scaleY={0.8} scaleZ={0.6} x={98.0} y={0.7} z={-216.3} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_jungle_temple_01_window" scaleX={0.9} scaleY={1} scaleZ={0.6} x={98.7} y={0.7} z={-218.5} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="en_m_jungle_temple_pillar_01" scaleX={0.4} scaleY={1} scaleZ={0.6} x={101.3} y={1} z={-216.3} rotX={37}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_jungle_temple_01_wall_low" scaleX={1} scaleY={1} scaleZ={1} x={99.7} y={4.7} z={-218.2} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_m_jungle_temple_pillar_01" scaleX={0.4} scaleY={0.8} scaleZ={0.6} x={101.3} y={0.7} z={-219.9} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_torch_standing_01" scaleX={1} scaleY={1} scaleZ={1} x={97.5} y={3.7} z={-216.1} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="jungle_tree_medium" scale={0.3} x={90.5} y={-1} z={-215.4} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="bush_01" scale={2} x={88.5} y={1} z={-214.4} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="bush_01" scale={2} x={91.9} y={0.7} z={-217.8} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="bush_02" scale={2} x={89.0} y={0.7} z={-211.1} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="apple_tree_01_t1" scale={0.8} x={87.9} y={0.7} z={-209.3} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_jungle_bush_cluster" scale={1} x={89.7} y={0.7} z={-209.1} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_jungle_bush_cluster" scale={1} x={97.1} y={0.7} z={-215.5} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="hangingbush_01" scale={1} x={99.6} y={4.4} z={-211.5} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="jungle_tree_medium" scale={0.3} x={105.1} y={-1} z={-218.2} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_jungle_bush_cluster" scale={1} x={106.1} y={0.6} z={-217.3} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="bush_02" scale={2} x={96.1} y={1} z={-207.7} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="bush_01" scale={1} x={107.6} y={0.7} z={-209.5} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="tree_02" scale={1} x={109.0} y={0.7} z={-211.5} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_stone_tiles_01" scale={4} x={99.6} y={0.7} z={-215.2} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_jungle_stone_chest_02" scale={1} x={100} y={0.7} z={-218.2} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="dead_tree_03" scale={0.8} x={111.9} y={0.7} z={-217.1} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_jungle_bush_cluster" scale={1} x={110.9} y={0.7} z={-214.6} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="jungle_tree_small" scale={1} x={112.5} y={0.7} z={-206.2} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_jungle_bush_cluster" scale={1} x={111.0} y={0.7} z={-208.3} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_jungle_bush_cluster" scale={1} x={104.3} y={0.7} z={-208.5} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="en_p_fallen_tree_01" scale={1} x={103.4} y={0.7} z={-206.1} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="tree_stump_01" scale={1} x={99.4} y={0.7} z={-206.1} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="mushroom_small_t1_01" scale={1.2} x={94.2} y={0.7} z={-209.4} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="mushroom_small_t1_01" scale={1.2} x={93.1} y={0.7} z={-212.4} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="mushroom_small_t1_01" scale={1.2} x={95.9} y={0.7} z={-210.9} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="mushroom_small_t1_01" scale={1.2} x={91.6} y={0.7} z={-207.3} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="mushroom_small_t1_01" scale={1.2} x={89.9} y={0.7} z={-210.0} rotX={0}  rotY={90} rotZ={0} />
+        <Prefab id="ivy_01" scale={1} x={94.3} y={8} z={-219.9} rotX={0}  rotY={0} rotZ={0} />
+        <Prefab id="en_p_jungle_root_02" scale={0.3} x={89.1} y={0.7} z={-208.3} rotX={0}  rotY={140} rotZ={0} />
+        <Prefab id="monstera_plant_01" scale={1} x={93.2} y={0.9} z={-207.1} rotX={0}  rotY={140} rotZ={0} />
+        <Prefab id="rock_pile_01_t1" scale={1} x={94.3} y={1} z={-210.9} rotX={0}  rotY={140} rotZ={0} />
+        <Prefab id="monstera_plant_01" scale={1} x={97.1} y={0.7} z={-205.6} rotX={0}  rotY={140} rotZ={0} />
+        
+        </>
         {/* <Prefab id="gpl_tilting_ramp_01" scale={1} x={1.6} y={0.0} z={-249.1} />
     <Prefab id="gpl_tilting_ramp_01" scale={1} x={-5} y={0.0} z={-249.1} /> */}
         {/* <Prefab id="lounge_sofa_01" scale={1} x={-16.4} y={10} z={-225.1} rotX={-4.6} rotY={180} rotZ={0} /> */}
