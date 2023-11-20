@@ -115,10 +115,6 @@ const CinemaVerse = () => (
       <MediaDisplay scale={1} x={26.0} y={1.26} z={-203.3} rotX={0} rotY={-130} rotZ={0}{...Intestellar} />
     </>
 
-    <>
-      {/* <Prefab id ="particle_cannon_glitter" x={86.9} y={0.0} z={-202.6} rotX={40.8} rotY={0.0} rotZ={-40.2} /> */}
-    </>
-
     <ButtonSensor output="myButton10" materialOff={"t_hex_disco_01"} scale={2} x={115.0} y={1.2} z={-201.5} />
     <VisibleOnSignal input="myButton10">
     <Animation animation={{ x:[85,110], y:[0,0], z:[-199,-199], duration:15, easing:'LINEAR' }}>
