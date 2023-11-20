@@ -1,70 +1,167 @@
-import { HNode, render } from "@hiber3d/hdk-react";
-import { For, Grid, Ground, SkyScraper } from "@hiber3d/hdk-react-components";
-import { Prefab } from "@hiber3d/hdk-react";
-import { Avatar } from "@hiber3d/hdk-react-components";
-import { Animation } from "@hiber3d/hdk-react";
-import { MaterialOnSignal } from "@hiber3d/hdk-react";
-import { ButtonSensor } from "@hiber3d/hdk-react";
+import { Prefab, ButtonSensor, Animation, VisibleOnSignal } from "@hiber3d/hdk-react";
 import { VideoPanel } from "@hiber3d/hdk-react-components";
-import { VisibleOnSignal } from "@hiber3d/hdk-react";
-import { AndGate } from "@hiber3d/hdk-react";
-import { getAvatarPosition } from '@hiber3d/hdk-core';
-import { getCameraPosition } from "@hiber3d/hdk-core/dist/types/src/HDK";
-import { InteractiveMediaAsset } from "@hiber3d/hdk-react-components";
 import { MediaDisplay } from "@hiber3d/hdk-react-components";
-import React, { useState, useEffect } from 'react';
 
 
-const mediaInfo = {
-    src: 'https://cdn.hibervr.com/external/music_mv/iconic/Bullet-Spotify.jpg',
-    ratio: 1,
-    header: 'Listen on Spotify',
-    preBody: 'ICONÏC - Bullet',
-    link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
-  };
+const Indian2 = {
+  src: 'https://upload.wikimedia.org/wikipedia/en/6/6f/Indian_2_poster.jpg',
+  ratio: 0.8,
+  header: 'Indian 2',
+  preBody: 'Kamal Hasan                     2Hrs',
+  link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
+};
+const Vikram = {
+  src: 'https://m.media-amazon.com/images/M/MV5BOTFhMDU5ZGYtNjcyNy00NjAyLWI5YzItYTUwZTk5MjhkMzk0XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg',
+  ratio: 0.8,
+  header: 'Indian 2',
+  preBody: 'Kamal Hasan 2.5 Hrs',
+  link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
+};
+const KGF = {
+  src: 'https://rukminim2.flixcart.com/image/850/1000/l3bx5e80/poster/p/x/m/small-kgf-poster-kgf-yash-movie-poster-for-room-kgf-chapter-2-original-imageh8qchumcz8k.jpeg',
+  ratio: 0.8,
+  header: 'Indian 2',
+  preBody: 'Kamal Hasan 2.5 Hrs',
+  link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
+};
+
+const Intestellar = {
+  src: 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg',
+  ratio: 0.8,
+  header: 'Indian 2',
+  preBody: 'Kamal Hasan 2.5 Hrs',
+  link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
+};
+
+const FordVsFerrari = {
+  src: 'https://m.media-amazon.com/images/M/MV5BM2UwMDVmMDItM2I2Yi00NGZmLTk4ZTUtY2JjNTQ3OGQ5ZjM2XkEyXkFqcGdeQXVyMTA1OTYzOTUx._V1_.jpg',
+  ratio: 0.8,
+  header: 'Indian 2',
+  preBody: 'Kamal Hasan 2.5 Hrs',
+  link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
+};
+
+const BreakingBad = {
+  src: 'https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_UY1200_CR85,0,630,1200_AL_.jpg',
+  ratio: 0.7,
+  header: 'Indian 2',
+  preBody: 'Kamal Hasan 2.5 Hrs',
+  link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
+};
+
+const SpongeBob = {
+  src: 'https://www.spongebobshop.com/cdn/shop/products/SB-Standees-Spong-3_800x.jpg',
+  ratio: 0.8,
+  header: 'Indian 2',
+  preBody: 'Kamal Hasan 2.5 Hrs',
+  link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
+};
+
+const EndGame = {
+  src: 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg',
+  ratio: 0.8,
+  header: 'Indian 2',
+  preBody: 'Kamal Hasan 2.5 Hrs',
+  link: 'https://open.spotify.com/track/1h2z5KcMffP46AeSePfwWM?si=a79df0439e8c4a44',
+};
 
 
-  
+
+
 const CinemaVerse = () => (
-    <>
+  <>
     <Prefab
       id="sofa_01_t2" rotY={180} scale={1} x={1.6} y={0.0} z={-249.1}>
 
-      {/* <Avatar animation='an_default_walk' x={2} y={0.16} z={0.12} rotY={20} /> */}
-      <Avatar animation="an_default_emote_hip_hop_dancing_01" x={-2} y={0.16} z={0.3} rotY={20} />
-      <Avatar animation="an_default_emote_sitting_idle_02" y={0.16} z={0.12} rotY={20} />
-      <Avatar animation="moving_platform_rotating" x={6.9} y={0.0} z={-240.3} />
+      {/* <Avatar
+        src={{
+          url: 'https://models.readyplayer.me/6401fc12ce7f75d51cdb2888.glb',
+          skeletonGroupID: 'skg_default'
+        }}
+        animation="an_default_emote_hip_hop_dancing_01"
+        x={2} y={0.16} z={0.12} rotY={20}
+      /> */}
 
     </Prefab>
-    {/* <Prefab id="gpl_button_01" rotY={180} scale={7} x={4.1} y={0.0} z={-252.9}></Prefab> */}
-    <ButtonSensor output="myButton1" />
-    <ButtonSensor output="myButton2" scale={7} x={4.1} y={0.0} z={-252.9} />
-    <Prefab id="gpl_teleporter_sender_02" x={31.1} y={0.0} z={249.3} />
-    <Prefab id="gpl_teleporter_sender_01" scale={2.6} x={0.0} y={13} z={-285.6} rotX={90} />
-    <Prefab id="gpl_teleporter_receiver_01" x={22.5} y={0.0} z={245.0} />
-    <Prefab id="gpl_teleporter_receiver_02" x={38} y={0.0} z={-246.1} />
-    {/* <MediaDisplay scaleY={2} scaleX={4} scaleZ={2} x={28.2} y={16.8} z={-270.2} {...mediaInfo} /> */}
-   
-    {/* <Prefab id="hovering_sign_04" x={10} y={5.0} z={-263}/>
-    <InteractiveMediaAsset
+    <>
+      {/* Vikram
+        Jungle Book
+        Intestellar
+        Indian 2
+
+         */}
+      <ButtonSensor output="myButton1" materialOff={"t_hex_disco_01"} scale={2} x={18.7} y={1.2} z={-203.9} />
+      <ButtonSensor output="myButton2" materialOff={"t_hex_disco_01"} scale={2} x={16.9} y={1.2} z={-207.5} />
+      <ButtonSensor output="myButton3" materialOff={"t_hex_disco_01"} scale={2} x={18.5} y={1.2} z={-211.1} />
+      <ButtonSensor output="myButton4" materialOff={"t_hex_disco_01"} scale={2} x={22.0} y={1.2} z={-212.6} />
+      <ButtonSensor output="myButton5" materialOff={"t_hex_disco_01"} scale={2} x={25.5} y={1.2} z={-211.1} />
+      <ButtonSensor output="myButton6" materialOff={"t_hex_disco_01"} scale={2} x={27.1} y={1.2} z={-207.5} />
+      <ButtonSensor output="myButton7" materialOff={"t_hex_disco_01"} scale={2} x={22.0} y={1.2} z={-202.6} />
+      <ButtonSensor output="myButton8" materialOff={"t_hex_disco_01"} scale={2} x={26.0} y={1.2} z={-203.3} />
+
+    </>
+    <>
+         <Animation animation={{ x:[85,110], y:[0,0], z:[-199,-199], duration:15, easing:'LINEAR' }}>
+          <Prefab id="searchlight_01"  scale={1}/>      
+          <Prefab id="hiberpunk_blocks_o1_01"   scale={0.5}/>      
+         </Animation>
+    </>
+    <>
+      <MediaDisplay scale={1} x={18.7} y={1.26} z={-203.9} rotX={0} rotY={120} rotZ={0}{...Indian2} />
+      <MediaDisplay scale={1.3} x={16.9} y={1.26} z={-207.5} rotX={0} rotY={100} rotZ={0}{...KGF} />
+      <MediaDisplay scale={1.2} x={18.5} y={1.26} z={-211.1} rotX={0} rotY={60} rotZ={0}{...Vikram} />
+      <MediaDisplay scale={1.2} x={22.0} y={1.26} z={-212.6} rotX={0} rotY={30} rotZ={0}{...FordVsFerrari} />
+      <MediaDisplay scale={1} x={25.5} y={1.26} z={-211.1} rotX={0} rotY={-40} rotZ={0}{...SpongeBob} />
+      <MediaDisplay scale={1} x={27.1} y={1.26} z={-207.5} rotX={0} rotY={-68} rotZ={0}{...EndGame} />
+      <MediaDisplay scale={1} x={22.0} y={1.26} z={-202.6} rotX={0} rotY={-30} rotZ={0}{...BreakingBad} />
+      <MediaDisplay scale={1} x={26.0} y={1.26} z={-203.3} rotX={0} rotY={-130} rotZ={0}{...Intestellar} />
+    </>
+    {/* <Prefab id="hovering_sign_04" x={10} y={5.0} z={-263} /> */}
+    {/* <InteractiveMediaAsset
       header="jksfjdsn"
       // text="Your Custom Text Here" 
       preBody="yoooooooooooooo"
       body="skjdnfkjdsn"
       url="https://hiber3d.com/"
       asset={<Prefab id="hovering_sign_04" />}
-      // scale={20}
-      x={25} y={5.0} z={-263}
+      scale={1}
+      x={21.9} y={1.2} z={-206.9}
+    /> */}
+    {/* <InCircle renderItem={() =>
+      <ButtonSensor output="myButton2" materialOff={"t_hex_disco_01"} scale={2} x={22} y={1.2} z={-207.5} />
+    }
+
     /> */}
 
-    <VisibleOnSignal input="myButton2">
-      <Prefab id="ancient_urn_01" scale={2} x={10} y={0.0} z={-252.9} />
-      {/* <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'}  scale= {4}x={10.5} y={2.0} z={-259.5} rotY={180}></VideoPanel> */}
-      <VideoPanel src={'https://cdn.hibervr.com/video/Hiber3D.mp4'} scale={10} x={10} y={1.5} z={-259.5} rotY={180}></VideoPanel>
 
+    <VisibleOnSignal input="myButton1">
+      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
     </VisibleOnSignal>
-    </>
-        
+    <VisibleOnSignal input="myButton2">
+      <VideoPanel src={'kgf.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+    </VisibleOnSignal>
+    <VisibleOnSignal input="myButton3">
+      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+    </VisibleOnSignal>
+    <VisibleOnSignal input="myButton4">
+      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+    </VisibleOnSignal>
+    <VisibleOnSignal input="myButton5">
+      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+    </VisibleOnSignal>
+    <VisibleOnSignal input="myButton6">
+      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+    </VisibleOnSignal>
+    <VisibleOnSignal input="myButton7">
+      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+    </VisibleOnSignal>
+    <VisibleOnSignal input="myButton8">
+      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+    </VisibleOnSignal>
+    
+    
+  </>
+
 );
 
 export default CinemaVerse;
