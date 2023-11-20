@@ -71,7 +71,8 @@ const EndGame = {
 const CinemaVerse = () => (
   <>
     <Prefab
-      id="sofa_01_t2" rotY={180} scale={1} x={1.6} y={0.0} z={-249.1}>
+      id="sofa_01_t2" scale={1} x={10.7} y={0.0} z={-243.5}
+      rotX={3} rotY={-20.0} rotZ={0}>
 
       {/* <Avatar
         src={{
@@ -101,10 +102,7 @@ const CinemaVerse = () => (
 
     </>
     <>
-         <Animation animation={{ x:[85,110], y:[0,0], z:[-199,-199], duration:15, easing:'LINEAR' }}>
-          <Prefab id="searchlight_01"  scale={1}/>      
-          <Prefab id="hiberpunk_blocks_o1_01"   scale={0.5}/>      
-         </Animation>
+         
     </>
     <>
       <MediaDisplay scale={1} x={18.7} y={1.26} z={-203.9} rotX={0} rotY={120} rotZ={0}{...Indian2} />
@@ -116,35 +114,27 @@ const CinemaVerse = () => (
       <MediaDisplay scale={1} x={22.0} y={1.26} z={-202.6} rotX={0} rotY={-30} rotZ={0}{...BreakingBad} />
       <MediaDisplay scale={1} x={26.0} y={1.26} z={-203.3} rotX={0} rotY={-130} rotZ={0}{...Intestellar} />
     </>
-    {/* <Prefab id="hovering_sign_04" x={10} y={5.0} z={-263} /> */}
-    {/* <InteractiveMediaAsset
-      header="jksfjdsn"
-      // text="Your Custom Text Here" 
-      preBody="yoooooooooooooo"
-      body="skjdnfkjdsn"
-      url="https://hiber3d.com/"
-      asset={<Prefab id="hovering_sign_04" />}
-      scale={1}
-      x={21.9} y={1.2} z={-206.9}
-    /> */}
-    {/* <InCircle renderItem={() =>
-      <ButtonSensor output="myButton2" materialOff={"t_hex_disco_01"} scale={2} x={22} y={1.2} z={-207.5} />
-    }
 
-    /> */}
+    <>
+      {/* <Prefab id ="particle_cannon_glitter" x={86.9} y={0.0} z={-202.6} rotX={40.8} rotY={0.0} rotZ={-40.2} /> */}
+    </>
 
-
-    <VisibleOnSignal input="myButton1">
-      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+    <ButtonSensor output="myButton10" materialOff={"t_hex_disco_01"} scale={2} x={115.0} y={1.2} z={-201.5} />
+    <VisibleOnSignal input="myButton10">
+    <Animation animation={{ x:[85,110], y:[0,0], z:[-199,-199], duration:15, easing:'LINEAR' }}>
+          <Prefab id="searchlight_01"  scale={1}/>      
+          <Prefab id="hiberpunk_blocks_o1_01"   scale={0.5}/>      
+         </Animation>
     </VisibleOnSignal>
+
     <VisibleOnSignal input="myButton2">
-      <VideoPanel src={'kgf.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+      <VideoPanel src={'kgf.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.7} muted={false} soundMinDistance={32}></VideoPanel>
     </VisibleOnSignal>
     <VisibleOnSignal input="myButton3">
-      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+      <VideoPanel src={'vikram.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.77} muted={true}></VideoPanel>
     </VisibleOnSignal>
     <VisibleOnSignal input="myButton4">
-      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
+      <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'}  scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
     </VisibleOnSignal>
     <VisibleOnSignal input="myButton5">
       <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
