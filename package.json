@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "hdk dev --open",
-    "upload": "hdk upload"
+    "upload": "hdk upload",
+    "start": "nodemon"
   },
   "dependencies": {
     "@hiber3d/hdk-cli": "^0.5.8",

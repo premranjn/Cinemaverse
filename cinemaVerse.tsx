@@ -127,7 +127,7 @@ const CinemaVerse = () => (
       <VideoPanel src={'kgf.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.7} muted={false} soundMinDistance={32}></VideoPanel>
     </VisibleOnSignal>
     <VisibleOnSignal input="myButton3">
-      <VideoPanel src={'vikram.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.77} muted={true}></VideoPanel>
+      <VideoPanel src={'vikram.mp4'} scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.77}  soundMinDistance={32} muted={true}></VideoPanel>
     </VisibleOnSignal>
     <VisibleOnSignal input="myButton4">
       <VideoPanel src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'}  scale={10} x={0} y={1} z={-225} rotX={0} rotY={0} rotZ={0} ratio={1.33}></VideoPanel>
