@@ -1,7 +1,7 @@
 # NITTroCineverse
 
 
-Please see [HDK Docs](https://developer.hiber3d.com/docs/) for full documentation.
+Please see [Demo & Docs](https://www.premranjan.in/docs/ShareNITT.pdf) for full documentation.
 
 Install with this command:
 
